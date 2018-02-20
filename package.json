@@ -1,0 +1,41 @@
+{
+  "name": "Overmind",
+  "version": "0.0.0",
+  "description": "",
+  "author": "Ben Bartlett",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bencbartlett/Overmind.git"
+  },
+  "homepage": "https://github.com/bencbartlett/Overmind#readme",
+  "bugs": {
+    "url": "https://github.com/bencbartlett/Overmind/issues"
+  },
+  "scripts": {
+    "lint": "tslint \"src/**/*.ts\"",
+    "push-main": "rollup -c --dest main",
+    "push-pserver": "rollup -c --dest pserver",
+    "push-sim": "rollup -c --dest sim",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch-main": "rollup -cw --dest main",
+    "watch-pserver": "rollup -cw --dest pserver",
+    "watch-sim": "rollup -cw --dest sim"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@types/lodash": "^3.10.1",
+    "@types/source-map": "^0.5.2",
+    "rollup": "^0.51.8",
+    "rollup-plugin-clean": "^1.0.0",
+    "rollup-plugin-commonjs": "^8.2.6",
+    "rollup-plugin-node-resolve": "^3.0.0",
+    "rollup-plugin-screeps": "0.1.1",
+    "rollup-plugin-typescript2": "^0.8.1",
+    "tslint": "^5.8.0",
+    "typed-screeps": "^2.0.0",
+    "typescript": "^2.6.1"
+  },
+  "dependencies": {
+    "source-map": "^0.6.1"
+  }
+}
