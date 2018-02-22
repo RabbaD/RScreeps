@@ -23,6 +23,10 @@ export class TaskClaim extends Task {
 	}
 
 	work() {
-		return this.creep.claimController(this.target);
+		let response = this.creep.claimController(this.target);
+		if (response==ERR_NOT_OWNER) {
+			response = this.creep.attackController(this.target);
+		}
+        return response;
 	}
 }
